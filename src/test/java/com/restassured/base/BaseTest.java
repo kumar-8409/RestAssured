@@ -14,5 +14,7 @@ public class BaseTest {
         RestAssured.baseURI = APIConfig.BASE_URL;
         RestAssured.useRelaxedHTTPSValidation();
         logger.info("Base URL set to: {}", APIConfig.BASE_URL);
+
+        //comment
     }
 }
