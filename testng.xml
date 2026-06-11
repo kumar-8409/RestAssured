@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REST Assured Test Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.restassured.listeners.TestListener"/>
+    </listeners>
+    
+    <test name="JSONPlaceholder API Tests">
+        <classes>
+            <class name="com.restassured.tests.PostsAPITest"/>
+            <class name="com.restassured.tests.UsersAPITest"/>
+            <class name="com.restassured.tests.CommentsAPITest"/>
+        </classes>
+    </test>
+</suite>
